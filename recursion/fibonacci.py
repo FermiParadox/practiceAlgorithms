@@ -1,6 +1,7 @@
 """
-Given an int, return it's fibonaci.
+Given an int, return it's fibonacci.
 """
+
 
 # Spoiler
 #
@@ -40,7 +41,7 @@ def f(n: int) -> int:
     if n == 1:
         return 1
 
-    return n + f(n-1)
+    return f(n - 2) + f(n - 1)
 
 
 print(f(10))
