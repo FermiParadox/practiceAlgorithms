@@ -35,6 +35,7 @@ d = {
 
 
 def f(given_dict: dict) -> List[int]:
+
     m = 1000
     M = 0
     for k, v in given_dict.items():
