@@ -1,6 +1,6 @@
-import collections
+from collections import namedtuple
 
-Point = collections.namedtuple('Point', ['left', 'right', 'value'])
+Point = namedtuple('Point', ['left', 'right', 'value'])
 
 
 def is_inside(root: Point, value: int) -> bool:
@@ -26,3 +26,8 @@ p1 = Point(value=1, left=None, right=None)
 p3 = Point(value=3, left=None, right=None)
 p2 = Point(value=2, left=p1, right=p3)
 print(is_inside(p2, 4))
+
+p1 = Point(value=1, left=None, right=None)
+p3 = Point(value=3, left=None, right=None)
+p2 = Point(value=2, left=p1, right=p3)
+print(is_inside(p2, 1))
