@@ -17,12 +17,12 @@ def is_inside(root: Point, value: int) -> bool:
     return False
 
 
-n1 = Point(value=1, left=None, right=None)
-n3 = Point(value=3, left=None, right=None)
-n2 = Point(value=2, left=n1, right=n3)
-print(is_inside(n2, 3))
+p1 = Point(value=1, left=None, right=None)
+p3 = Point(value=3, left=None, right=None)
+p2 = Point(value=2, left=p1, right=p3)
+print(is_inside(p2, 3))
 
-n1 = Point(value=1, left=None, right=None)
-n3 = Point(value=3, left=None, right=None)
-n2 = Point(value=2, left=n1, right=n3)
-print(is_inside(n2, 4))
+p1 = Point(value=1, left=None, right=None)
+p3 = Point(value=3, left=None, right=None)
+p2 = Point(value=2, left=p1, right=p3)
+print(is_inside(p2, 4))
